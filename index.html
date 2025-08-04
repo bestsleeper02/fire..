@@ -573,7 +573,7 @@
             <div class="external-links">
                 <h3>관련 공식 사이트 및 자료</h3>
                 <div class="link-grid">
-                    <a href="https://forestfire.go.kr" target="_blank" class="external-link">
+                    <a href="http://forestfire.nifos.go.kr/menu.action?menuNum=6" target="_blank" class="external-link">
                         <span class="icon">🔥</span>
                         <div>
                             <strong>산림청 산불 위험 예보</strong><br>
@@ -606,15 +606,9 @@
             
             <div class="info-cards">
                 <div class="info-card">
-                    <h3>시뮬레이션 기술</h3>
-                    <p><strong>AABB/OBB 충돌 감지:</strong> Axis-Aligned Bounding Box와 Oriented Bounding Box 알고리즘을 사용하여 화재의 경계와 지면의 접촉을 정확히 감지합니다.</p>
+                    <h3>시뮬레이션</h3>
+                    <p><strong>AABB/OBB 충돌 감지:</strong> 충돌 감지 알고리즘을 사용하여 화재의 경계와 지면의 접촉을 정확히 감지합니다.</p>
                     <p><strong>실시간 계산:</strong> 풍향, 풍속, 습도, 지형 특성을 종합적으로 고려한 확산 모델을 적용합니다.</p>
-                </div>
-                
-                <div class="info-card">
-                    <h3>바람 시스템</h3>
-                    <p><strong>360도 풍향:</strong> 마우스를 이용해 원하는 방향으로 자유롭게 풍향을 설정할 수 있습니다.</p>
-                    <p><strong>보퍼트 풍력계급:</strong> 국제적으로 사용되는 풍속 분류 체계를 적용하여 0~12단계로 구분합니다.</p>
                 </div>
                 
                 <div class="info-card">
@@ -1202,7 +1196,7 @@
                 <p>예상 피해 면적은 약 ${Math.round(data.burnedCells * 9)} 평방미터입니다. (셀 크기 3x3m 기준)</p>
                 
                 <div class="report-section-title">🔗 관련 자료</div>
-                <p>• <a href="https://forestfire.go.kr" target="_blank">산림청 국가 산불 위험 예보 시스템</a></p>
+                <p>• <a href="http://forestfire.nifos.go.kr/main.action" target="_blank">산림청 국가 산불 위험 예보 시스템</a></p>
                 <p>• <a href="https://www.forest.go.kr" target="_blank">산림청 공식 홈페이지</a></p>
                 <p>• <a href="https://www.weather.go.kr" target="_blank">기상청 날씨 정보</a></p>
             `;
@@ -1253,7 +1247,7 @@
         }
         
         function getHumidityName(level) {
-            const names = ['', '매우 건조 (20%)', '건조 (40%)', '보통 (60%)', '습함 (80%)', '매우 습함 (90%)'];
+            const names = ['', '매우 건조 (20%)', '건조 (40%)', '보통 (60%)', '습함 (80%)', '매우 습함 (100%)'];
             return names[level];
         }
         
